@@ -1,0 +1,18 @@
+{{{% raw %}}}{
+    "project_name": "Example project",
+    "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+    "description": "Just another cookiecutter example template..",
+    "__prompts__": {
+        "project_name": "What's the most descriptive name of your project ?",
+        "project_slug": "What is the short name of your project (lowercase without spaces) ?",
+        "description": "How can you describe your project in a few words"
+    },
+    "_jinja2_env_vars": {
+        "block_start_string": "{{%",
+        "block_end_string": "%}}",
+        "variable_start_string": "{{{",
+        "variable_end_string": "}}}",
+        "comment_start_string": "{{#",
+        "comment_end_string": "#}}"
+    }
+}{{{% endraw %}}}
